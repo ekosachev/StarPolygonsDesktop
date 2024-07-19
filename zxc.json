@@ -1,0 +1,16 @@
+[
+  {
+    "name": "task1 (ans 36)",
+    "description": "Find the angle of a {5/2} star polygon.",
+    "picture": "./pictures/pic1.png",
+    "answer": "36",
+    "solve": "test2.png"
+  },
+  {
+    "name": "task2 (ans 53)",
+    "description": "description2",
+    "picture": "./pictures/test.png",
+    "answer": "53",
+    "solve": "test2.png"
+  }
+]
