@@ -4,17 +4,18 @@ from PySide6.QtGui import QMouseEvent
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel
 from PySide6.QtCore import QFile
-from penis import Ui_MainWindow
+
+from ui.TasksWindowUI import Ui_MainWindow
 from json import *
 from sympy import *
 
-class MainWindow(QMainWindow):
+class TasksWindow(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super(TasksWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        with open("../../Desktop/project/zxc.json") as f:   #open json config with questons
+        with open("./zxc.json") as f:   #open json config with questons
             self.config = load(f)
 
         kkk = [self.config[i]['name'] for i in range(len(self.config))]    #read json file
