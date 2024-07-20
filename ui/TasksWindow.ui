@@ -57,7 +57,7 @@ background-color:  rgb(180, 167, 214);</string>
          </property>
          <property name="maximumSize">
           <size>
-           <width>500</width>
+           <width>450</width>
            <height>350</height>
           </size>
          </property>
