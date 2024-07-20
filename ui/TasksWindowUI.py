@@ -48,7 +48,7 @@ class Ui_MainWindow(object):
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMinimumSize(QSize(350, 250))
-        self.label_3.setMaximumSize(QSize(450, 350))
+        self.label_3.setMaximumSize(QSize(500, 350))
         font = QFont()
         font.setPointSize(12)
         self.label_3.setFont(font)
