@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
         self.construct_window.ui.btnBack.clicked.connect(self.return_to_main)
         self.ui.btnConstruct.clicked.connect(self.open_construct_window)
         self.ui.btnExersises.clicked.connect(self.open_tasks_window)
+        self.tasks_window.ui.pushButton.clicked.connect(self.return_to_main)
 
         self.show()
 

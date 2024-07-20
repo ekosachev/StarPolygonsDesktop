@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'TasksWindow.ui'
+## Form generated from reading UI file 'taskswindow.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -20,11 +20,12 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
     QWidget)
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(900, 528)
+        MainWindow.resize(1314, 482)
         MainWindow.setStyleSheet(u"backgrond-color : rgb(180, 167, 214);\n"
 "background-color:  rgb(180, 167, 214);")
         self.centralwidget = QWidget(MainWindow)
@@ -47,21 +48,13 @@ class Ui_MainWindow(object):
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMinimumSize(QSize(350, 250))
-        self.label_3.setMaximumSize(QSize(350, 250))
+        self.label_3.setMaximumSize(QSize(450, 350))
         font = QFont()
         font.setPointSize(14)
         self.label_3.setFont(font)
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
 
         self.horizontalLayout_2.addWidget(self.label_3)
-
-        self.listWidget = QListWidget(self.frame)
-        self.listWidget.setObjectName(u"listWidget")
-        self.listWidget.setMinimumSize(QSize(250, 250))
-        self.listWidget.setMaximumSize(QSize(250, 250))
-        self.listWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
-
-        self.horizontalLayout_2.addWidget(self.listWidget)
 
 
         self.gridLayout_2.addWidget(self.frame, 1, 0, 1, 1)
@@ -114,22 +107,16 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.frame_6, 0, 2, 1, 1)
 
 
-        self.gridLayout_2.addWidget(self.horizontalFrame, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.horizontalFrame, 0, 0, 1, 2)
 
-        self.frame_2 = QFrame(self.centralwidget)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_4 = QHBoxLayout(self.frame_2)
-        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.frame_3 = QFrame(self.frame_2)
-        self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setMaximumSize(QSize(400, 200))
-        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout = QHBoxLayout(self.frame_3)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.frame_8 = QFrame(self.frame_3)
+        self.frame_11 = QFrame(self.centralwidget)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setMaximumSize(QSize(16777215, 16777215))
+        self.frame_11.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_6 = QHBoxLayout(self.frame_11)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.frame_8 = QFrame(self.frame_11)
         self.frame_8.setObjectName(u"frame_8")
         self.frame_8.setMaximumSize(QSize(200, 150))
         self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
@@ -154,15 +141,37 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.pushButton_3)
 
 
-        self.horizontalLayout.addWidget(self.frame_8)
+        self.horizontalLayout_6.addWidget(self.frame_8)
 
-        self.frame_7 = QFrame(self.frame_3)
+        self.frame_7 = QFrame(self.frame_11)
         self.frame_7.setObjectName(u"frame_7")
         self.frame_7.setMaximumSize(QSize(300, 150))
         self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_3 = QGridLayout(self.frame_7)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.label_9 = QLabel(self.frame_7)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setMinimumSize(QSize(120, 40))
+        self.label_9.setMaximumSize(QSize(120, 40))
+        font2 = QFont()
+        font2.setPointSize(18)
+        self.label_9.setFont(font2)
+
+        self.gridLayout_3.addWidget(self.label_9, 2, 0, 1, 1)
+
+        self.lineEdit = QLineEdit(self.frame_7)
+        self.lineEdit.setObjectName(u"lineEdit")
+        self.lineEdit.setMinimumSize(QSize(120, 40))
+        self.lineEdit.setMaximumSize(QSize(120, 40))
+        font3 = QFont()
+        font3.setPointSize(12)
+        self.lineEdit.setFont(font3)
+        self.lineEdit.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.lineEdit.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.lineEdit, 0, 0, 1, 1)
+
         self.label_10 = QLabel(self.frame_7)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setMinimumSize(QSize(40, 40))
@@ -171,41 +180,38 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.label_10, 0, 1, 1, 1)
 
-        self.lineEdit = QLineEdit(self.frame_7)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setMinimumSize(QSize(120, 40))
-        self.lineEdit.setMaximumSize(QSize(120, 40))
-        font2 = QFont()
-        font2.setPointSize(18)
-        self.lineEdit.setFont(font2)
-        self.lineEdit.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
-        self.gridLayout_3.addWidget(self.lineEdit, 0, 0, 1, 1)
+        self.horizontalLayout_6.addWidget(self.frame_7)
 
-        self.label_9 = QLabel(self.frame_7)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setMinimumSize(QSize(120, 40))
-        self.label_9.setMaximumSize(QSize(120, 40))
-        self.label_9.setFont(font2)
-
-        self.gridLayout_3.addWidget(self.label_9, 2, 0, 1, 1)
-
-
-        self.horizontalLayout.addWidget(self.frame_7)
-
-
-        self.horizontalLayout_4.addWidget(self.frame_3)
-
-        self.frame_4 = QFrame(self.frame_2)
+        self.frame_4 = QFrame(self.frame_11)
         self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setMinimumSize(QSize(0, 0))
-        self.frame_4.setMaximumSize(QSize(16777215, 16777215))
         self.frame_4.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_4)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.frame_9 = QFrame(self.frame_4)
+
+        self.horizontalLayout_6.addWidget(self.frame_4)
+
+
+        self.gridLayout_2.addWidget(self.frame_11, 1, 1, 1, 1)
+
+        self.frame_2 = QFrame(self.centralwidget)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setMinimumSize(QSize(0, 0))
+        self.frame_2.setMaximumSize(QSize(16777215, 16777215))
+        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_4 = QHBoxLayout(self.frame_2)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.frame_3 = QFrame(self.frame_2)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setMaximumSize(QSize(16777215, 16777215))
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_3)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.frame_9 = QFrame(self.frame_3)
         self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setMinimumSize(QSize(0, 0))
+        self.frame_9.setMaximumSize(QSize(16777215, 16777215))
         self.frame_9.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_9.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_4 = QGridLayout(self.frame_9)
@@ -216,26 +222,38 @@ class Ui_MainWindow(object):
         self.pushButton_4.setMaximumSize(QSize(160, 40))
         self.pushButton_4.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
-        self.gridLayout_4.addWidget(self.pushButton_4, 2, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_4, 0, 0, 1, 1)
+
+        self.frame_10 = QFrame(self.frame_9)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_10, 0, 2, 2, 1)
 
         self.label_5 = QLabel(self.frame_9)
         self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 0))
+        self.label_5.setMaximumSize(QSize(700, 450))
 
-        self.gridLayout_4.addWidget(self.label_5, 3, 0, 1, 1)
-
-        self.label_6 = QLabel(self.frame_9)
-        self.label_6.setObjectName(u"label_6")
-
-        self.gridLayout_4.addWidget(self.label_6, 2, 1, 2, 1)
+        self.gridLayout_4.addWidget(self.label_5, 0, 1, 2, 1)
 
 
-        self.horizontalLayout_3.addWidget(self.frame_9)
+        self.horizontalLayout.addWidget(self.frame_9)
 
 
-        self.horizontalLayout_4.addWidget(self.frame_4)
+        self.horizontalLayout_4.addWidget(self.frame_3)
 
 
-        self.gridLayout_2.addWidget(self.frame_2, 2, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.frame_2, 2, 0, 1, 2)
+
+        self.listWidget = QListWidget(self.centralwidget)
+        self.listWidget.setObjectName(u"listWidget")
+        self.listWidget.setMinimumSize(QSize(250, 250))
+        self.listWidget.setMaximumSize(QSize(250, 350))
+        self.listWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+
+        self.gridLayout_2.addWidget(self.listWidget, 1, 2, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -251,12 +269,14 @@ class Ui_MainWindow(object):
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u0432 \u043c\u0435\u043d\u044e", None))
         self.label_4.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u0447\u0438", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u043e\u0442\u0432\u0435\u0442", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u043e\u0442\u0432\u0435\u0442", None))
-        self.label_10.setText("")
         self.label_9.setText("")
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0435\u0448\u0435\u043d\u0438\u0435", None))
+        self.lineEdit.setInputMask("")
+        self.lineEdit.setText("")
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442", None))
+        self.label_10.setText("")
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0440\u0435\u0448\u0435\u043d\u0438\u0435", None))
         self.label_5.setText("")
-        self.label_6.setText("")
     # retranslateUi
 
