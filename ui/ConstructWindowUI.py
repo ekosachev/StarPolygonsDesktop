@@ -105,6 +105,11 @@ class Ui_MainWindow(object):
 
         self.formLayout_3.setWidget(2, QFormLayout.LabelRole, self.cbxDisplayVertexCoords)
 
+        self.btnDisplayCircumcircle = QCheckBox(self.groupBox_3)
+        self.btnDisplayCircumcircle.setObjectName(u"btnDisplayCircumcircle")
+
+        self.formLayout_3.setWidget(3, QFormLayout.SpanningRole, self.btnDisplayCircumcircle)
+
 
         self.verticalLayout.addWidget(self.groupBox_3)
 
@@ -122,6 +127,11 @@ class Ui_MainWindow(object):
         self.btnUnexplode.setObjectName(u"btnUnexplode")
 
         self.verticalLayout.addWidget(self.btnUnexplode)
+
+        self.btnConstructFractal = QPushButton(self.frame)
+        self.btnConstructFractal.setObjectName(u"btnConstructFractal")
+
+        self.verticalLayout.addWidget(self.btnConstructFractal)
 
         self.groupBox_2 = QGroupBox(self.frame)
         self.groupBox_2.setObjectName(u"groupBox_2")
@@ -276,9 +286,11 @@ class Ui_MainWindow(object):
         self.cbxDisplayNgon.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u044c \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 N-\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a", None))
         self.cbxDisplayInnnerSP.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u044c \u0432\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0435 \u0437\u0432\u0435\u0437\u0434\u0447\u0430\u0442\u044b\u0435 \u043c\u043d\u043e\u0433\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0438", None))
         self.cbxDisplayVertexCoords.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u043f\u0438\u0441\u044b\u0432\u0430\u0442\u044c \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b \u0432\u0435\u0440\u0448\u0438\u043d", None))
+        self.btnDisplayCircumcircle.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u044c \u043e\u043f\u0438\u0441\u0430\u043d\u043d\u0443\u044e \u043e\u043a\u0440\u0443\u0436\u043d\u043e\u0441\u0442\u044c", None))
         self.btnConstruct.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u044c", None))
         self.btnExplode.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0441\u043e\u0441\u0442\u0430\u0432\u043d\u044b\u0435 \u0447\u0430\u0441\u0442\u0438", None))
         self.btnUnexplode.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u044a\u0435\u0434\u0438\u043d\u0438\u0442\u044c \u0441\u043e\u0441\u0442\u0430\u0432\u043d\u044b\u0435 \u0447\u0430\u0441\u0442\u0438", None))
+        self.btnConstructFractal.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u044c \u0444\u0440\u0430\u043a\u0442\u0430\u043b", None))
         self.groupBox_2.setTitle(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0447\u0438c\u043b\u0435\u043d\u043d\u044b\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f", None))
         self.lblSideLength.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0435 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u043e", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043b\u0438\u043d\u0430 \u0441\u0442\u043e\u0440\u043e\u043d\u044b", None))

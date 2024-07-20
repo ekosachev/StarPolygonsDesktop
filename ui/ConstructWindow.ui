@@ -135,6 +135,13 @@
             </property>
            </widget>
           </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QCheckBox" name="btnDisplayCircumcircle">
+            <property name="text">
+             <string>Отображать описанную окружность</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -156,6 +163,13 @@
         <widget class="QPushButton" name="btnUnexplode">
          <property name="text">
           <string>Объединить составные части</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnConstructFractal">
+         <property name="text">
+          <string>Построить фрактал</string>
          </property>
         </widget>
        </item>
