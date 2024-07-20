@@ -13,7 +13,7 @@ class TasksWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        with open("./zxc.json") as f:
+        with open("./zxc.json", encoding='utf-8') as f:
             self.config = load(f)
 
         kkk = [self.config[i]['name'] for i in range(len(self.config))]

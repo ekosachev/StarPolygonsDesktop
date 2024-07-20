@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1314, 482)
+        MainWindow.resize(1314, 832)
         MainWindow.setStyleSheet(u"backgrond-color : rgb(180, 167, 214);\n"
 "background-color:  rgb(180, 167, 214);")
         self.centralwidget = QWidget(MainWindow)
@@ -50,9 +50,10 @@ class Ui_MainWindow(object):
         self.label_3.setMinimumSize(QSize(350, 250))
         self.label_3.setMaximumSize(QSize(450, 350))
         font = QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         self.label_3.setFont(font)
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
+        self.label_3.setWordWrap(True)
 
         self.horizontalLayout_2.addWidget(self.label_3)
 
@@ -164,9 +165,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setMinimumSize(QSize(120, 40))
         self.lineEdit.setMaximumSize(QSize(120, 40))
-        font3 = QFont()
-        font3.setPointSize(12)
-        self.lineEdit.setFont(font3)
+        self.lineEdit.setFont(font)
         self.lineEdit.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.lineEdit.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -195,7 +194,7 @@ class Ui_MainWindow(object):
 
         self.frame_2 = QFrame(self.centralwidget)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setMinimumSize(QSize(0, 0))
+        self.frame_2.setMinimumSize(QSize(0, 450))
         self.frame_2.setMaximumSize(QSize(16777215, 16777215))
         self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
@@ -223,13 +222,6 @@ class Ui_MainWindow(object):
         self.pushButton_4.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
         self.gridLayout_4.addWidget(self.pushButton_4, 0, 0, 1, 1)
-
-        self.frame_10 = QFrame(self.frame_9)
-        self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_10.setFrameShadow(QFrame.Shadow.Raised)
-
-        self.gridLayout_4.addWidget(self.frame_10, 0, 2, 2, 1)
 
         self.label_5 = QLabel(self.frame_9)
         self.label_5.setObjectName(u"label_5")

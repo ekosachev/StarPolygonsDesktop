@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1314</width>
-    <height>482</height>
+    <height>832</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -63,7 +63,7 @@ background-color:  rgb(180, 167, 214);</string>
          </property>
          <property name="font">
           <font>
-           <pointsize>14</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="text">
@@ -71,6 +71,9 @@ background-color:  rgb(180, 167, 214);</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -368,7 +371,7 @@ background-color:  rgb(180, 167, 214);</string>
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>0</height>
+        <height>450</height>
        </size>
       </property>
       <property name="maximumSize">
@@ -439,16 +442,6 @@ background-color:  rgb(180, 167, 214);</string>
                </property>
                <property name="text">
                 <string>Показать решение</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2" rowspan="2">
-              <widget class="QFrame" name="frame_10">
-               <property name="frameShape">
-                <enum>QFrame::Shape::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Shadow::Raised</enum>
                </property>
               </widget>
              </item>
