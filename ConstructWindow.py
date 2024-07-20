@@ -1,6 +1,6 @@
 import sys
 import time
-from math import gcd
+from math import gcd, ceil
 from threading import Thread
 
 from PIL import Image
@@ -34,6 +34,17 @@ class ConstructWindow(QMainWindow):
         self.ui.sbxN.valueChanged.connect(lambda: self.ui.btnExplode.setDisabled(True))
         self.lastAction = None
         self.ui.label.resizeEvent = lambda event: self.lastAction() if self.lastAction is not None else None
+
+        self.ui.sbxN.valueChanged.connect(self.update_m_restrictions)
+
+
+    def update_m_restrictions(self):
+        n = self.ui.sbxN.value()
+        min_m = 2
+        max_m = (ceil(n / 2) - 1)
+        self.ui.sbxM.setMinimum(min_m)
+        self.ui.sbxM.setMaximum(max_m)
+
     def construct(self):
         n = self.ui.sbxN.value()
         m = self.ui.sbxM.value()
