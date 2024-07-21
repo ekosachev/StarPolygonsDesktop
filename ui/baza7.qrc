@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>bytton.png</file>
+    <file>download.png</file>
+    <file>Group 7.png</file>
+    <file>theeeory.png</file>
+    <file>four.png</file>
+  </qresource>
+</RCC>
