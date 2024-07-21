@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(3858, 830)
+        MainWindow.resize(2018, 830)
         MainWindow.setStyleSheet(u"backgrond-color : rgb(180, 167, 214);\n"
 "background-color:  rgb(180, 167, 214);")
         self.centralwidget = QWidget(MainWindow)
@@ -72,14 +72,14 @@ class Ui_MainWindow(object):
 
         self.label_6 = QLabel(self.frame_9)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setMaximumSize(QSize(600, 470))
+        self.label_6.setMaximumSize(QSize(600, 450))
 
         self.gridLayout_4.addWidget(self.label_6, 0, 2, 2, 1)
 
         self.label_5 = QLabel(self.frame_9)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setMinimumSize(QSize(0, 0))
-        self.label_5.setMaximumSize(QSize(600, 470))
+        self.label_5.setMaximumSize(QSize(600, 450))
 
         self.gridLayout_4.addWidget(self.label_5, 0, 1, 2, 1)
 
@@ -200,8 +200,10 @@ class Ui_MainWindow(object):
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMinimumSize(QSize(350, 250))
-        self.label_3.setMaximumSize(QSize(450, 350))
-        self.label_3.setFont(font)
+        self.label_3.setMaximumSize(QSize(450, 380))
+        font2 = QFont()
+        font2.setPointSize(11)
+        self.label_3.setFont(font2)
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
         self.label_3.setWordWrap(True)
 
@@ -212,14 +214,13 @@ class Ui_MainWindow(object):
 
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setMaximumSize(QSize(16777215, 80))
-        font2 = QFont()
-        font2.setPointSize(36)
-        self.label.setFont(font2)
+        self.label.setMaximumSize(QSize(2000, 80))
+        font3 = QFont()
+        font3.setPointSize(36)
+        self.label.setFont(font3)
         self.label.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.label.setTextFormat(Qt.TextFormat.AutoText)
-        self.label.setPixmap(QPixmap(u"../../../Downloads/image_2024-07-12_17-15-29.png"))
-        self.label.setScaledContents(True)
+        self.label.setScaledContents(False)
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.gridLayout_2.addWidget(self.label, 0, 0, 1, 3)

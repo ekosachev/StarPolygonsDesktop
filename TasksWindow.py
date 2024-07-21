@@ -5,14 +5,14 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QLabel
 from PySide6.QtCore import QFile
 from ui.TasksWindowUI import Ui_MainWindow
 from json import *
-from sympy import *
 
 class TasksWindow(QMainWindow):
     def __init__(self):
         super(TasksWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ui.label.setPixmap(QPixmap(u"./pictures/image_2024-07-12_17-15-29.png"))
+        self.ui.label.setScaledContents(True)
+        self.ui.label.setPixmap(QPixmap("./pictures/taskspic.png"))
 
         with open("./zxc.json", encoding='utf-8') as f:
             self.config = load(f)
