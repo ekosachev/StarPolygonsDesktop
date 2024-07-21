@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="main">
+    <file>knopka1.png</file>
+    <file>knopka2.png</file>
+    <file>interestingsv.png</file>
+  </qresource>
+</RCC>
