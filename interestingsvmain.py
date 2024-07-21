@@ -1,19 +1,25 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import QFile
-from okno import Ui_MainWindow
-from okno2 import Ui_secondwindow
+from ui.okno import Ui_MainWindow
+from ui.okno2 import Ui_secondwindow
 
 
-class MainWindow(QMainWindow):
+class InterestingFacts(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super(InterestingFacts, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.pushButton.clicked.connect(self.second)
+        self.second_window = sw()
+        self.second_window.ui.pushButton.clicked.connect(self.return_to_first)
     def second(self):
-        seconwindow.show()
-        window.close()
+        self.destroy()
+        self.second_window.show()
+
+    def return_to_first(self):
+        self.second_window.close()
+        self.show()
 
 
 class sw(QMainWindow):
@@ -21,16 +27,4 @@ class sw(QMainWindow):
         super(sw, self).__init__()
         self.ui = Ui_secondwindow()
         self.ui.setupUi(self)
-        self.ui.pushButton.clicked.connect(self.first)
-    def first(self):
-        window.show()
-        seconwindow.close()
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    seconwindow = sw()
-    window = MainWindow()
-    window.show()
-
-
-    sys.exit(app.exec())
+        self.ui.pushButton_2.clicked.connect(self.destroy)

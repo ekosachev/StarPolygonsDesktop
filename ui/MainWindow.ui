@@ -40,6 +40,12 @@
             <verstretch>30</verstretch>
            </sizepolicy>
           </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -67,6 +73,13 @@
        <widget class="QPushButton" name="btnTheory">
         <property name="text">
          <string>Теория по звездчатым многоугольникам</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnFacts">
+        <property name="text">
+         <string>Интересные свойства</string>
         </property>
        </widget>
       </item>

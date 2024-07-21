@@ -18,7 +18,6 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
     QWidget)
-import baza1_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -37,7 +36,7 @@ class Ui_MainWindow(object):
         self.label.setObjectName(u"label")
         self.label.setMaximumSize(QSize(16777215, 100))
         self.label.setStyleSheet(u"")
-        self.label.setPixmap(QPixmap(u":/main/interestingsv.png"))
+        self.label.setPixmap(QPixmap(u"./pictures/interestingsv/interestingsv.png"))
         self.label.setScaledContents(True)
 
         self.verticalLayout_4.addWidget(self.label)
@@ -59,14 +58,14 @@ class Ui_MainWindow(object):
         self.label_2.setMinimumSize(QSize(200, 200))
         self.label_2.setMaximumSize(QSize(1000, 1000))
         self.label_2.setStyleSheet(u"")
-        self.label_2.setPixmap(QPixmap(u"design/polygon.png"))
+        self.label_2.setPixmap(QPixmap(u"./pictures/interestingsv/polygon.png"))
         self.label_2.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_2)
 
         self.label_3 = QLabel(self.frame_2)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setPixmap(QPixmap(u":/newPrefix/DOK-VO.png"))
+        self.label_3.setPixmap(QPixmap(u"./pictures/interestingsv/dokvo.png"))
         self.label_3.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_3)
@@ -105,7 +104,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setSizePolicy(sizePolicy)
         self.pushButton_2.setStyleSheet(u"")
         icon = QIcon()
-        icon.addFile(u"design/knopka1.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u"./pictures/interestingsv/knopka1.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButton_2.setIcon(icon)
         self.pushButton_2.setIconSize(QSize(100, 100))
 
@@ -122,7 +121,7 @@ class Ui_MainWindow(object):
         self.pushButton.setSizePolicy(sizePolicy)
         self.pushButton.setMinimumSize(QSize(0, 50))
         icon1 = QIcon()
-        icon1.addFile(u"design/knopka2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u"./pictures/interestingsv/knopka2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButton.setIcon(icon1)
         self.pushButton.setIconSize(QSize(90, 90))
 

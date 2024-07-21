@@ -18,7 +18,6 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QSizePolicy, QStatusBar,
     QVBoxLayout, QWidget)
-import baza2_rc
 
 class Ui_secondwindow(object):
     def setupUi(self, secondwindow):
@@ -34,7 +33,7 @@ class Ui_secondwindow(object):
         self.label.setObjectName(u"label")
         self.label.setMinimumSize(QSize(700, 100))
         self.label.setMaximumSize(QSize(10000000, 100))
-        self.label.setPixmap(QPixmap(u":/main/design/interestingsv.png"))
+        self.label.setPixmap(QPixmap(u"./pictures/interestingsv/interestingsv.png"))
         self.label.setScaledContents(True)
 
         self.verticalLayout_6.addWidget(self.label)
@@ -48,8 +47,8 @@ class Ui_secondwindow(object):
         self.label_2 = QLabel(self.frame)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setMaximumSize(QSize(700, 400))
-        self.label_2.setStyleSheet(u"background-image: url(:/main/design/svns.png);")
-        self.label_2.setPixmap(QPixmap(u":/main/design/svns.png"))
+        self.label_2.setStyleSheet(u"background-image: url(./pictures/interestingsv/svns.png);")
+        self.label_2.setPixmap(QPixmap(u"./pictures/interestingsv/svns.png"))
         self.label_2.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_2)
@@ -57,7 +56,7 @@ class Ui_secondwindow(object):
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMaximumSize(QSize(16777215, 350))
-        self.label_3.setPixmap(QPixmap(u":/main/design/theorysvnsv.png"))
+        self.label_3.setPixmap(QPixmap(u"./pictures/interestingsv/theorysvnsv.png"))
         self.label_3.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_3)
@@ -77,13 +76,13 @@ class Ui_secondwindow(object):
         self.pushButton.setGeometry(QRect(30, 20, 100, 100))
         self.pushButton.setMinimumSize(QSize(100, 100))
         self.pushButton.setMaximumSize(QSize(100, 100))
-        self.pushButton.setStyleSheet(u"image: url(:/main/design/knopka1.png);")
+        self.pushButton.setStyleSheet(u"image: url(./pictures/interestingsv/knopka1.png);")
         self.pushButton_2 = QPushButton(self.frame_2)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setGeometry(QRect(870, 20, 479, 115))
         self.pushButton_2.setMinimumSize(QSize(100, 115))
         self.pushButton_2.setMaximumSize(QSize(479, 16777215))
-        self.pushButton_2.setStyleSheet(u"background-image: url(:/main/design/back.png);")
+        self.pushButton_2.setStyleSheet(u"background-image: url(./pictures/interestingsv/back.png);")
 
         self.horizontalLayout.addWidget(self.frame_2)
 
