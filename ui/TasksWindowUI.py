@@ -145,6 +145,16 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.lineEdit, 0, 0, 1, 1)
 
+        self.label_9 = QLabel(self.frame_7)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setMinimumSize(QSize(200, 40))
+        self.label_9.setMaximumSize(QSize(200, 40))
+        font1 = QFont()
+        font1.setPointSize(18)
+        self.label_9.setFont(font1)
+
+        self.gridLayout_3.addWidget(self.label_9, 2, 0, 1, 1)
+
         self.label_10 = QLabel(self.frame_7)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setMinimumSize(QSize(40, 40))
@@ -152,16 +162,6 @@ class Ui_MainWindow(object):
         self.label_10.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
         self.gridLayout_3.addWidget(self.label_10, 0, 1, 1, 1)
-
-        self.label_9 = QLabel(self.frame_7)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setMinimumSize(QSize(120, 40))
-        self.label_9.setMaximumSize(QSize(120, 40))
-        font1 = QFont()
-        font1.setPointSize(18)
-        self.label_9.setFont(font1)
-
-        self.gridLayout_3.addWidget(self.label_9, 2, 0, 1, 1)
 
 
         self.horizontalLayout_6.addWidget(self.frame_7)
@@ -244,8 +244,8 @@ class Ui_MainWindow(object):
         self.lineEdit.setInputMask("")
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442", None))
-        self.label_10.setText("")
         self.label_9.setText("")
+        self.label_10.setText("")
         self.label_2.setText("")
         self.label_3.setText("")
         self.label.setText("")
