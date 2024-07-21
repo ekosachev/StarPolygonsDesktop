@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>3858</width>
+    <width>2018</width>
     <height>830</height>
    </rect>
   </property>
@@ -126,7 +126,7 @@ background-color:  rgb(180, 167, 214);</string>
                <property name="maximumSize">
                 <size>
                  <width>600</width>
-                 <height>470</height>
+                 <height>450</height>
                 </size>
                </property>
                <property name="text">
@@ -145,7 +145,7 @@ background-color:  rgb(180, 167, 214);</string>
                <property name="maximumSize">
                 <size>
                  <width>600</width>
-                 <height>470</height>
+                 <height>450</height>
                 </size>
                </property>
                <property name="text">
@@ -413,12 +413,12 @@ background-color:  rgb(180, 167, 214);</string>
          <property name="maximumSize">
           <size>
            <width>450</width>
-           <height>350</height>
+           <height>380</height>
           </size>
          </property>
          <property name="font">
           <font>
-           <pointsize>12</pointsize>
+           <pointsize>11</pointsize>
           </font>
          </property>
          <property name="text">
@@ -439,7 +439,7 @@ background-color:  rgb(180, 167, 214);</string>
      <widget class="QLabel" name="label">
       <property name="maximumSize">
        <size>
-        <width>16777215</width>
+        <width>2000</width>
         <height>80</height>
        </size>
       </property>
@@ -457,11 +457,8 @@ background-color:  rgb(180, 167, 214);</string>
       <property name="textFormat">
        <enum>Qt::TextFormat::AutoText</enum>
       </property>
-      <property name="pixmap">
-       <pixmap>../../../Downloads/image_2024-07-12_17-15-29.png</pixmap>
-      </property>
       <property name="scaledContents">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
