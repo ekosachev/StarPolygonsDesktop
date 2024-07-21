@@ -12,6 +12,7 @@ class TasksWindow(QMainWindow):
         super(TasksWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ui.label.setPixmap(QPixmap(u"./pictures/image_2024-07-12_17-15-29.png"))
 
         with open("./zxc.json", encoding='utf-8') as f:
             self.config = load(f)
@@ -25,6 +26,7 @@ class TasksWindow(QMainWindow):
 
     def update_parts(self):
         self.ui.label_5.setPixmap(QPixmap("./pictures/emptyback.png"))
+        self.ui.label_6.setPixmap(QPixmap("./pictures/emptyback.png"))
         self.ui.label_9.setText('')
         self.ui.label_10.setPixmap(QPixmap("./pictures/empty.png"))
         self.ui.lineEdit.setText('')
@@ -70,9 +72,11 @@ class TasksWindow(QMainWindow):
             if i['name'] == name:
                 task = i
                 break
-        solution = task["solve"]
         self.ui.label_5.setScaledContents(True)
-        self.ui.label_5.setPixmap(QPixmap(solution))
+        self.ui.label_6.setScaledContents(True)
+        self.ui.label_5.setPixmap(QPixmap(task["solve"]))
+        if task["solve2"] != "":
+            self.ui.label_6.setPixmap(QPixmap(task["solve2"]))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
