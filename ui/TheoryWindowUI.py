@@ -112,6 +112,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setSpacing(6)
+        self.horizontalLayout.setContentsMargins(20, 0, 20, 0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.label = QLabel(self.centralWidget)
         self.label.setObjectName(u"label")
@@ -166,7 +167,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"PDF Viewer", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"StarPolygons", None))
         self.actionZoom_In.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u044c", None))
 #if QT_CONFIG(shortcut)
         self.actionZoom_In.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl++", None))

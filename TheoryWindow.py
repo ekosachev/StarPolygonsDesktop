@@ -49,13 +49,15 @@ class TheoryWindow(QMainWindow):
         self.ui.pdfView.setDocument(self.m_document)
 
         self.ui.pdfView.zoomFactorChanged.connect(self.m_zoomSelector.set_zoom_factor)
+        self.ui.pdfView.setPageMode(QPdfView.PageMode.MultiPage)
+        self.ui.actionContinuous.setChecked(True)
 
     @Slot(QUrl)
     def open(self, doc_location):
         if doc_location.isLocalFile():
             self.m_document.load(doc_location.toLocalFile())
             document_title = self.m_document.metaData(QPdfDocument.MetaDataField.Title)
-            self.setWindowTitle(document_title if document_title else "PDF Viewer")
+            self.setWindowTitle(document_title if document_title else "StarPolygons")
             self.page_selected(0)
             self.m_pageSelector.setMaximum(self.m_document.pageCount() - 1)
         else:

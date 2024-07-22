@@ -99,7 +99,7 @@ class Ui_secondwindow(object):
     # setupUi
 
     def retranslateUi(self, secondwindow):
-        secondwindow.setWindowTitle(QCoreApplication.translate("secondwindow", u"MainWindow", None))
+        secondwindow.setWindowTitle(QCoreApplication.translate("secondwindow", u"StarPolygons", None))
         self.label.setText("")
         self.label_2.setText("")
         self.label_3.setText("")

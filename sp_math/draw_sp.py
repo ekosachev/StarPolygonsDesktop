@@ -18,6 +18,7 @@ def calculate_n_gon_vertices(n: int, rotation: float = 0) -> list[tuple[float, f
 
 def calculate_sp_edges(vertices: list[tuple[float, float]], m: int) \
         -> list[tuple[tuple[float, float], tuple[float, float]]]:
+
     edges = [
         (vertices[i], vertices[(i+m) % len(vertices)]) for i in range(len(vertices))
     ]

@@ -56,7 +56,8 @@ class MainWindow(QMainWindow):
 
     def open_interesting_facts_window(self):
         self.destroy()
-        self.interesting_facts_window.showMaximized()
+        self.theory_window.showMaximized()
+        self.theory_window.open(QUrl.fromLocalFile("./Star_Polygons.pdf"))
 
     def return_to_main_c(self):
         self.construct_window.close()

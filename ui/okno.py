@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"StarPolygons", None))
         self.label.setText("")
         self.label_2.setText("")
         self.label_3.setText("")
