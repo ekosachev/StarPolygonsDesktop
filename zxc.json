@@ -209,9 +209,9 @@
     "name": "Задача 24",
     "description": "Вокруг звездчатого многоугольника {5/2} описана окружность радиусом 4. Найдите площадь многоугольника ADKB.",
     "picture": "./pictures/task/task24.jpg",
-    "answer": "",
-    "ans_show": "",
-    "solve": "",
+    "answer": ["5,781","5.781"],
+    "ans_show": "5.781",
+    "solve": "./pictures/ans/solve24.png",
     "solve2": ""
   }
 ]
