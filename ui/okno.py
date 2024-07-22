@@ -23,7 +23,6 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1253, 769)
         MainWindow.setMinimumSize(QSize(100, 100))
         MainWindow.setMaximumSize(QSize(100000, 100000))
         MainWindow.setLayoutDirection(Qt.LeftToRight)

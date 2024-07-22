@@ -15,11 +15,11 @@ class InterestingFacts(QMainWindow):
         self.second_window.ui.pushButton.clicked.connect(self.return_to_first)
     def second(self):
         self.destroy()
-        self.second_window.show()
+        self.second_window.showMaximized()
 
     def return_to_first(self):
         self.second_window.close()
-        self.show()
+        self.showMaximized()
 
 
 class sw(QMainWindow):

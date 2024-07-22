@@ -23,7 +23,6 @@ class Ui_secondwindow(object):
     def setupUi(self, secondwindow):
         if not secondwindow.objectName():
             secondwindow.setObjectName(u"secondwindow")
-        secondwindow.resize(1378, 737)
         secondwindow.setStyleSheet(u"background-color: rgb(180, 167, 214);")
         self.centralwidget = QWidget(secondwindow)
         self.centralwidget.setObjectName(u"centralwidget")

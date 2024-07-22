@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="main">
-    <file>design/theorysvnsv.png</file>
-    <file>design/interestingsv.png</file>
-    <file>design/knopka1.png</file>
-    <file>design/svns.png</file>
-    <file>design/back.png</file>
-  </qresource>
-</RCC>

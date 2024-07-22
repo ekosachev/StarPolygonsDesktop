@@ -1,6 +1,6 @@
 from math import pi, cos
 
-from draw_sp import oriented_area
+from sp_math import oriented_area
 
 def fibonacci_series(n):
     series = []

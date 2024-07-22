@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(30)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMaximumSize(QSize(400, 16777215))
+        self.label.setMaximumSize(QSize(400, 433))
         self.label.setPixmap(QPixmap(u"ui/spBG.png"))
         self.label.setScaledContents(True)
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
