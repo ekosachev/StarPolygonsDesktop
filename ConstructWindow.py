@@ -12,7 +12,6 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QSizePolicy
 from sp_math.draw_sp import draw_sp
 from sp_math.sp_math import vertex_angle, area, perimeter, central_angle, side_length
 from sp_math.exploding_polygon import draw_exploding_polygon
-from sp_math.fractal_sp import draw_fractal_sp
 from ui.ConstructWindowUI import Ui_MainWindow
 
 
@@ -29,7 +28,6 @@ class ConstructWindow(QMainWindow):
         self.ui.btnExplode.clicked.connect(self.start_exploding_polygon)
         self.ui.btnUnexplode.clicked.connect(self.start_unexploding_polygon)
 
-        self.ui.btnConstructFractal.clicked.connect(self.construct_fractal)
         self.ui.sbxM.valueChanged.connect(lambda: self.ui.btnExplode.setDisabled(True))
         self.ui.sbxN.valueChanged.connect(lambda: self.ui.btnExplode.setDisabled(True))
         self.lastAction = None
@@ -151,31 +149,6 @@ class ConstructWindow(QMainWindow):
         self.ui.btnExplode.setEnabled(True)
         self.construct()
 
-    def construct_fractal(self):
-        n = self.ui.sbxN.value()
-        m = self.ui.sbxM.value()
-
-        geometry = self.ui.label.size().toTuple()
-        img = Image.new('RGBA', geometry, (0, 0, 0, 0))
-
-        draw_fractal_sp(
-            img,
-            n,
-            m,
-            min(geometry) // 2 * .6,
-            (geometry[0] // 2, geometry[1] // 2),
-            1
-        )
-
-        self.ui.label.setPixmap(QPixmap.fromImage(
-            QImage(
-                ImageQt(
-                    img
-                )
-            ).scaled(self.ui.label.size().toTuple()[0], self.ui.label.size().toTuple()[1], Qt.AspectRatioMode.KeepAspectRatio)
-        ))
-
-        self.lastAction = self.construct_fractal
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

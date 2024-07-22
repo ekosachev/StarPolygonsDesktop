@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>914</width>
-    <height>696</height>
+    <height>713</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -163,13 +163,6 @@
         <widget class="QPushButton" name="btnUnexplode">
          <property name="text">
           <string>Объединить составные части</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnConstructFractal">
-         <property name="text">
-          <string>Построить фрактал</string>
          </property>
         </widget>
        </item>
