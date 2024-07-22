@@ -28,7 +28,7 @@ class TasksWindow(QMainWindow):
         self.ui.label_5.setPixmap(QPixmap("./pictures/emptyback.png"))
         self.ui.label_6.setPixmap(QPixmap("./pictures/emptyback.png"))
         self.ui.label_9.setText('')
-        self.ui.label_10.setPixmap(QPixmap("./pictures/empty.png"))
+        self.ui.label_10.setPixmap(QPixmap("./pictures/emptyback.png"))
         self.ui.lineEdit.setText('')
 
         name = self.ui.listWidget.selectedItems()[0].text()
@@ -50,7 +50,7 @@ class TasksWindow(QMainWindow):
                 break
         answer = task['answer']
         self.ui.label_10.setScaledContents(True)
-        if answer == self.ui.lineEdit.text():
+        if self.ui.lineEdit.text() in answer:
             self.ui.label_10.setPixmap(QPixmap("./pictures/correct.png"))
         else:
             self.ui.label_10.setPixmap(QPixmap("./pictures/incorrect.png"))
@@ -62,7 +62,7 @@ class TasksWindow(QMainWindow):
             if i['name'] == name:
                 task = i
                 break
-        answer = task['answer']
+        answer = task['ans_show']
         self.ui.label_9.setText(answer)
 
     def show_solution(self):
