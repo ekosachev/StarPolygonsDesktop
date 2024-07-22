@@ -18,27 +18,9 @@ def calculate_n_gon_vertices(n: int, rotation: float = 0) -> list[tuple[float, f
 
 def calculate_sp_edges(vertices: list[tuple[float, float]], m: int) \
         -> list[tuple[tuple[float, float], tuple[float, float]]]:
-    edges = []
-    n = len(vertices)
-    usedVertices = 0
-    shift = 0
-    while usedVertices < n:
-        start_i = shift
-        i1 = start_i
-        i2 = start_i + m
-        i2 %= n
-        edge = (vertices[i1], vertices[i2])
-        if edge not in edges:
-            edges.append(edge)
-        while i2 != start_i:
-            i1 = i2
-            i2 += m
-            i2 %= n
-            edge = (vertices[i1], vertices[i2])
-            if edge not in edges:
-                edges.append(edge)
-            usedVertices += 1
-        shift += 1
+    edges = [
+        (vertices[i], vertices[(i+m) % len(vertices)]) for i in range(len(vertices))
+    ]
 
     return edges
 
