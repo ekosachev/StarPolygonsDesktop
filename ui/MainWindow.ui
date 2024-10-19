@@ -64,6 +64,11 @@
       </item>
       <item>
        <widget class="QPushButton" name="btnConstruct">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Построить звездчатый многоугольник</string>
         </property>
@@ -71,20 +76,23 @@
       </item>
       <item>
        <widget class="QPushButton" name="btnTheory">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Теория по звездчатым многоугольникам</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btnFacts">
-        <property name="text">
-         <string>Интересные свойства</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="btnExersises">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Задачи</string>
         </property>
@@ -92,6 +100,11 @@
       </item>
       <item>
        <widget class="QPushButton" name="btnExit">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Выход</string>
         </property>

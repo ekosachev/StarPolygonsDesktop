@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(30)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMaximumSize(QSize(400, 433))
+        self.label.setMaximumSize(QSize(400, 16777215))
         self.label.setPixmap(QPixmap(u"ui/spBG.png"))
         self.label.setScaledContents(True)
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -55,26 +55,27 @@ class Ui_MainWindow(object):
 
         self.btnConstruct = QPushButton(self.centralwidget)
         self.btnConstruct.setObjectName(u"btnConstruct")
+        font = QFont()
+        font.setPointSize(22)
+        self.btnConstruct.setFont(font)
 
         self.verticalLayout.addWidget(self.btnConstruct)
 
         self.btnTheory = QPushButton(self.centralwidget)
         self.btnTheory.setObjectName(u"btnTheory")
+        self.btnTheory.setFont(font)
 
         self.verticalLayout.addWidget(self.btnTheory)
 
-        self.btnFacts = QPushButton(self.centralwidget)
-        self.btnFacts.setObjectName(u"btnFacts")
-
-        self.verticalLayout.addWidget(self.btnFacts)
-
         self.btnExersises = QPushButton(self.centralwidget)
         self.btnExersises.setObjectName(u"btnExersises")
+        self.btnExersises.setFont(font)
 
         self.verticalLayout.addWidget(self.btnExersises)
 
         self.btnExit = QPushButton(self.centralwidget)
         self.btnExit.setObjectName(u"btnExit")
+        self.btnExit.setFont(font)
 
         self.verticalLayout.addWidget(self.btnExit)
 
@@ -93,11 +94,10 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"StarPolygons", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label.setText("")
         self.btnConstruct.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u044c \u0437\u0432\u0435\u0437\u0434\u0447\u0430\u0442\u044b\u0439 \u043c\u043d\u043e\u0433\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a", None))
         self.btnTheory.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0435\u043e\u0440\u0438\u044f \u043f\u043e \u0437\u0432\u0435\u0437\u0434\u0447\u0430\u0442\u044b\u043c \u043c\u043d\u043e\u0433\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430\u043c", None))
-        self.btnFacts.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0435 \u0441\u0432\u043e\u0439\u0441\u0442\u0432\u0430", None))
         self.btnExersises.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u0447\u0438", None))
         self.btnExit.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0445\u043e\u0434", None))
     # retranslateUi
