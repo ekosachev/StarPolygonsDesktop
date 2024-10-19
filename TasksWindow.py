@@ -34,7 +34,7 @@ class TasksWindow(QMainWindow):
         # self.ui.lblDrawing.setScaledContents(True)
         self.ui.lblDrawing.setSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Ignored)
         self.ui.lblInfo.setWordWrap(True)
-        self.model = TaskModel(path_to_file='./tasks.json')
+        self.model = TaskModel(path_to_file='data/tasks.json')
         self.ui.lstTasks.setModel(self.model)
         # self.ui.lstTasks.clicked.connect(self.on_new_task_selected)
         self.ui.lstTasks.selectionModel().selectionChanged.connect(self.on_new_task_selected)

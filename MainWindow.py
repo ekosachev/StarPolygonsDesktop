@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         self.construct_tab = ConstructWindow(self.ui.tabConstruct)
         self.tasks_tab = TasksWindow(self.ui.tabTasks)
         self.theory_tab = TheoryWindow(self.ui.tabTheory)
-        self.theory_tab.open(QUrl.fromLocalFile('./Star_Polygons.pdf'))
+        self.theory_tab.open(QUrl.fromLocalFile('data/Star_Polygons.pdf'))
         self.showMaximized()
 
 
