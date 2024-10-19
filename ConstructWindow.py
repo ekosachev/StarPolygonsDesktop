@@ -7,7 +7,7 @@ from PIL import Image
 from PIL.ImageQt import ImageQt
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap, QImage
-from PySide6.QtWidgets import QApplication, QMainWindow, QSizePolicy
+from PySide6.QtWidgets import QApplication, QMainWindow, QSizePolicy, QWidget
 
 from sp_math.draw_sp import draw_sp
 from sp_math.sp_math import vertex_angle, area, perimeter, central_angle, side_length
@@ -16,8 +16,8 @@ from ui.ConstructWindowUI import Ui_MainWindow
 
 
 class ConstructWindow(QMainWindow):
-    def __init__(self):
-        super(ConstructWindow, self).__init__()
+    def __init__(self, parent: QWidget):
+        super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.label.setScaledContents(True)
@@ -35,6 +35,7 @@ class ConstructWindow(QMainWindow):
 
         self.ui.sbxN.valueChanged.connect(self.update_m_restrictions)
 
+        parent.layout().addWidget(self.centralWidget())
 
     def update_m_restrictions(self):
         n = self.ui.sbxN.value()
