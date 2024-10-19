@@ -18,13 +18,13 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tabConstruct">
        <attribute name="title">

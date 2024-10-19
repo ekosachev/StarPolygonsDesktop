@@ -17,10 +17,9 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
 from PySide6.QtPdfWidgets import QPdfView
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QMainWindow,
-    QMenu, QMenuBar, QPushButton, QSizePolicy,
-    QSpacerItem, QStatusBar, QToolBar, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QHBoxLayout, QMainWindow, QMenu,
+    QMenuBar, QPushButton, QSizePolicy, QSpacerItem,
+    QStatusBar, QToolBar, QVBoxLayout, QWidget)
 import ui.resources_rc
 
 class Ui_MainWindow(object):
@@ -112,21 +111,20 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setSpacing(6)
-        self.horizontalLayout.setContentsMargins(20, 0, 20, 0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.label = QLabel(self.centralWidget)
-        self.label.setObjectName(u"label")
+        self.btnZoomIn = QPushButton(self.centralWidget)
+        self.btnZoomIn.setObjectName(u"btnZoomIn")
 
-        self.horizontalLayout.addWidget(self.label)
+        self.horizontalLayout.addWidget(self.btnZoomIn)
+
+        self.btnZoomOut = QPushButton(self.centralWidget)
+        self.btnZoomOut.setObjectName(u"btnZoomOut")
+
+        self.horizontalLayout.addWidget(self.btnZoomOut)
 
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
-
-        self.pushButton = QPushButton(self.centralWidget)
-        self.pushButton.setObjectName(u"pushButton")
-
-        self.horizontalLayout.addWidget(self.pushButton)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout)
@@ -167,7 +165,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"StarPolygons", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"PDF Viewer", None))
         self.actionZoom_In.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u044c", None))
 #if QT_CONFIG(shortcut)
         self.actionZoom_In.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl++", None))
@@ -193,8 +191,8 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(tooltip)
         self.actionForward.setToolTip(QCoreApplication.translate("MainWindow", u"forward to next view", None))
 #endif // QT_CONFIG(tooltip)
-        self.label.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u0441\u0442\u0430\u0439\u0442\u0435 \u043a\u043b\u0430\u0432\u0438\u0448\u0430\u043c\u0438 PgUp \u0438 PgDown", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u0432 \u043c\u0435\u043d\u044e", None))
+        self.btnZoomIn.setText(QCoreApplication.translate("MainWindow", u"+", None))
+        self.btnZoomOut.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.menuView.setTitle(QCoreApplication.translate("MainWindow", u"\u0412\u0438\u0434", None))
     # retranslateUi
 

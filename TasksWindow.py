@@ -7,7 +7,7 @@ from ui.TasksWindowUI import Ui_MainWindow
 from json import *
 
 class TasksWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, parent):
         super(TasksWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -23,6 +23,8 @@ class TasksWindow(QMainWindow):
         self.ui.pushButton_2.clicked.connect(self.ans_check)
         self.ui.pushButton_3.clicked.connect(self.show_ans)
         self.ui.pushButton_4.clicked.connect(self.show_solution)
+
+        parent.layout().addWidget(self.centralWidget())
 
     def update_parts(self):
         self.ui.label_5.setPixmap(QPixmap("./pictures/emptyback.png"))

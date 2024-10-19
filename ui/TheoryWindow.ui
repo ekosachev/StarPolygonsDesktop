@@ -52,9 +52,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QPushButton" name="btnZoomIn">
         <property name="text">
-         <string>Листайте клавишами PgUp и PgDown</string>
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnZoomOut">
+        <property name="text">
+         <string>-</string>
         </property>
        </widget>
       </item>
@@ -70,13 +77,6 @@
          </size>
         </property>
        </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Вернуться в меню</string>
-        </property>
-       </widget>
       </item>
      </layout>
     </item>

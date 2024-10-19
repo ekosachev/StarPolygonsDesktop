@@ -52,6 +52,11 @@ class TheoryWindow(QMainWindow):
         self.ui.pdfView.setPageMode(QPdfView.PageMode.MultiPage)
         self.ui.actionContinuous.setChecked(True)
 
+        self.ui.btnZoomIn.clicked.connect(self.on_actionZoom_In_triggered)
+        self.ui.btnZoomOut.clicked.connect(self.on_actionZoom_Out_triggered)
+
+        parent.layout().addWidget(self.centralWidget())
+
     @Slot(QUrl)
     def open(self, doc_location):
         if doc_location.isLocalFile():
@@ -106,11 +111,13 @@ class TheoryWindow(QMainWindow):
     @Slot()
     def on_actionZoom_In_triggered(self):
         factor = self.ui.pdfView.zoomFactor() * ZOOM_MULTIPLIER
+        factor = min(max(factor, 0.1), 10)
         self.ui.pdfView.setZoomFactor(factor)
 
     @Slot()
     def on_actionZoom_Out_triggered(self):
         factor = self.ui.pdfView.zoomFactor() / ZOOM_MULTIPLIER
+        factor = min(max(factor, 0.1), 10)
         self.ui.pdfView.setZoomFactor(factor)
 
     @Slot()

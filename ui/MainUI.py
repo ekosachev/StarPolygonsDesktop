@@ -29,8 +29,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setTabPosition(QTabWidget.North)
-        self.tabWidget.setTabShape(QTabWidget.Rounded)
+        self.tabWidget.setTabPosition(QTabWidget.TabPosition.North)
+        self.tabWidget.setTabShape(QTabWidget.TabShape.Rounded)
         self.tabConstruct = QWidget()
         self.tabConstruct.setObjectName(u"tabConstruct")
         self.tabWidget.addTab(self.tabConstruct, "")
@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
